@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Management - Resume Builder</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-box">
+            <h2>Manage Your Profile</h2>
+            <form action="profile.html" method="post">
+                <div class="input-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" value="John Doe" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="johndoe@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="input-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" rows="4">I am a software developer with 5 years of experience...</textarea>
+                </div>
+                <div class="input-group">
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture">
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn-primary save-btn">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

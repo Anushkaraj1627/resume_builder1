@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+        <nav>
+            <a href="profile.html">Profile</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="templateSection">
+            <h2>Select a Template</h2>
+            <select id="templateSelect">
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+            </select>
+        </section>
+        
+        <section id="resumeSection">
+            <h2>Your Resume</h2>
+            <form id="resumeForm">
+                <label for="education">Education:</label>
+                <textarea id="education" name="education"></textarea>
+                
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience"></textarea>
+                
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills"></textarea>
+                
+                <button type="button" onclick="exportResume()">Export Resume</button>
+            </form>
+        </section>
+        
+        <section id="previewSection">
+            <h2>Resume Preview</h2>
+            <div id="resumePreview"></div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Resume Templates Page Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; /* Light green background */
+}
+
+.header {
+    background-color: #2e7d32; /* Dark green */
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #e0f7fa; /* Light cyan */
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.templates-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.template-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.template-card h2 {
+    font-size: 1.5rem;
+    color: #2e7d32; /* Dark green */
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.template-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.template-preview {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Primary green */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
